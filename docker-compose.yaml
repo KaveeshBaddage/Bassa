@@ -1,0 +1,13 @@
+version: '2'
+services:
+    gulp:
+      build: './ui'
+      ports:
+        - "3000:4000"
+
+    python:
+      build: '.'
+      ports:
+        - "3500:4200"
+
+
